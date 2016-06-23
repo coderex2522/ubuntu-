@@ -1,0 +1,99 @@
+vm tools
+vm 配置了/home/coderex2522/.vimrc
+ibus 中文输入法
+
+
+错误提醒：
+fatal error: curl/curl.h: No such file or directory compilation terminated.
+//为了使用curl库安装了：
+sudo apt-get install libcurl4-openssl-dev
+sudo apt-get install libcurl4-nss-dev
+sudo apt-get install libcurl4-gnutls-dev
+
+
+
+//cp-abe环境安装；
+1、sudo apt-get install m4
+
+
+
+//安装mysql
+1、sudo apt-get install mysql-server mysql-client
+
+//为了使用ssh
+1、sudo apt-get install openssh-server
+
+
+//安装google chrome
+32位：
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+64位：
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+#若有报错，才需作以下操作
+sudo apt-get -f install
+
+//下面指令得才超级用户的下面才能运行
+dpkg -i google-chrome-stable_current_amd64.deb
+
+
+//安装ss到chrome
+下载SwitchyOmega插件到chrome
+
+#安装配置ss
+pip安装
+sudo apt-get install python-pip
+
+
+//安装git
+sudo apt-get install git-core
+
+#配置
+git config --global user.name "coderex2522"
+git config --global user.email "rex6817@gmail.com"
+
+
+
+
+
+//安装svn
+sudo apt install subversion
+
+
+//老版的vim不支持python,需要重新编译安装
+#可通过进入vim，输入:echo has('python')查看是否支持python，1表示支持，0表示不支持
+编译Vim之前，需要下载编译的相关工具和一些库
+
+sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev ruby-dev mercurial
+
+在安装新版本的Vim之前，你需要卸载原来安装的老版本Vim，依次在终端下执行下列命令：
+
+    sudo apt-get remove vim  
+    sudo apt-get remove vim-runtime  
+    sudo apt-get remove gvim  
+    sudo apt-get remove vim-tiny  
+    sudo apt-get remove vim-common  
+    sudo apt-get remove vim-gui-common  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
